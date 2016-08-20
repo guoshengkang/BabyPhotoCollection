@@ -1,0 +1,40 @@
+download Enthought Canopy with python 2.7 from https://store.enthought.com/downloads/#default and install it
+download PrecisionRecall.py file from GitHub https://github.azc.ext.hp.com/qian-lin/Performance
+
+click Editor and then open the PrecisionRecall.py file
+
+clik the green triangle botton in toolbar to run the code, then you will get the result(two EXCELs and one TXT)
+
+To run the code you have to make sure the following moduls are installed in the Canopy
+numpy (already installed in system by default)
+pandas (already installed in system by default)
+matplotlib (already installed in system by default)
+collections (already installed in system by default)
+xlwt (this is the only one you need to install by Package Manager)
+
+For install an module, you need to get access to Package Manager, then select Available option. Afet that, you can search the name of the module in Search Bar, then a search list will be given below. At last, you just need to select the modul in the list, and click Install below. 
+
+For configuration, you only need to revise the code in lines 118-123.
+lines 118-12 are as follows.
+line118: groundTruthPath='C:\\HP_Data\\4recall\\CMU_Complete\\GallagherDatasetGT.txt' 
+line119: rootPath='D:\\PFAP_results\\'
+line120: endPath='\\clusterInfo.txt'
+line121: resultPath='D:\\performance\\'
+line122: aggSure=[0.60,0.65,0.70,0.75,0.80,0.85,0.90,0.95]
+line123: aggStop=[0.45,0.50,0.55,0.60,0.65,0.70,0.75,0.80,0.85,0.90,0.95]
+
+So you may need to configure the following parameter:
+groundTruthPath--the path of groundTruth
+rootPath--path of clusterInfo.txt 
+for example, you have clusterInfo.txt  filesas follows.
+D:\PFAP_results\0.60_0.45\clusterInfo.txt
+D:\PFAP_results\0.60_0.50\clusterInfo.txt
+...
+you just need to set it as line 119
+resultPath--set the path where the output files are saved
+aggSure and aggStop--the two parameter should be set according to the parameter combinations used for clustering (they are also the folder names of clustering results)
+
+Any comments are welcome.
+Contact: guoshengkang@gmail.com
+QQ:275145504
+Tel:18202105624

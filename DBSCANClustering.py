@@ -56,4 +56,4 @@ print '---------DBCSANClustering----------END'
 # roidb.pkl is a list, an example of an element is as follows.
 #{'boxes': array([ 307.47695923,   87.3265686 ,  420.39474487,  203.52502441], dtype=float32),
 #  'face': 'BoundingBoxes\\F1\\1.png',
-#  'image': 'BabyPhotoDataset/F1/F1_17.jpg'},
+#  'image': 'BabyPhotoDataset/F1/F1_17.jpg'}

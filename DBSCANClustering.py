@@ -47,7 +47,7 @@ for x in range(125): #test a then 125
         if k!=-1:
             copy('D:\\'+pkl[i]['face'],facePath) # BoundingBoxes folder is located in D:\\
         else:
-            copy('D:\\'+pkl[i]['face'],facePath+'\\C'+str(k+1))
+            copy('D:\\'+pkl[i]['face'],facePath+'\\C'+str(k+1)) #k==-1, save photo to C0 folder
 #write the clustering results to spectral.pkl file
 output = open(ResultPath, 'wb') #will cover the file with the same name, if there is
 pickle.dump(DBSCANClusterLabels, output)
